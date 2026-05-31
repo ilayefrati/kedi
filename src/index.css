@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Heebo:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --green:       #00674b;
+  --green-dark:  #00523c;
+  --green-mid:   #3d8e72;
+  --green-light: #8ec9b0;
+  --green-pale:  #d4ece4;
+  --green-mist:  #eef7f4;
+  --sand:        #f7f4ef;
+  --sand-mid:    #ece5d8;
+  --sand-warm:   #d8cebb;
+  --gold:        #b8895a;
+  --gold-light:  #f0e5d4;
+  --text:        #0f2920;
+  --text-mid:    #2c5c48;
+  --text-muted:  #7a9e90;
+  --border:      #c4ddd5;
+  --surface:     #ffffff;
+  --shadow:      rgba(0, 50, 35, 0.09);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--sand);
+  color: var(--text);
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  direction: rtl;
+  text-align: right;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#root { width: 100%; min-height: 100svh; }
+
+.font-display { font-family: 'Frank Ruhl Libre', serif; }
+
+::selection { background: var(--green-pale); color: var(--text); }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--sand); }
+::-webkit-scrollbar-thumb { background: var(--green-pale); border-radius: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -72,7 +72,7 @@ export default function Login({ onSuccess }: Props) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          משהו שעשיתי בשבילך
+          משהו קטן שעשיתי בשבילך
         </motion.p>
 
         <motion.h1
@@ -87,7 +87,7 @@ export default function Login({ onSuccess }: Props) {
           transition={{ delay: 0.35 }}
         >
           ברוכה הבאה,{' '}
-          <span style={{ fontStyle: 'italic', color: 'var(--green)' }}>שלי.</span>
+          <span style={{ fontStyle: 'italic', color: 'var(--green)' }}>קדי.</span>
         </motion.h1>
 
         <motion.form
@@ -109,7 +109,7 @@ export default function Login({ onSuccess }: Props) {
               htmlFor="username"
               style={{ fontSize: '0.7rem', letterSpacing: '0.12em', color: 'var(--text-mid)', fontWeight: 500 }}
             >
-              מי את?
+             הו אר יו מן?
             </label>
             <input
               id="username" type="text" autoComplete="username"
@@ -134,7 +134,7 @@ export default function Login({ onSuccess }: Props) {
               htmlFor="password"
               style={{ fontSize: '0.7rem', letterSpacing: '0.12em', color: 'var(--text-mid)', fontWeight: 500 }}
             >
-              הסוד שלנו
+             נחשי מה הסיסמה באמא שלך
             </label>
             <input
               id="password" ref={passRef} type="password"
@@ -186,15 +186,6 @@ export default function Login({ onSuccess }: Props) {
             {loading ? <LoadingDots /> : 'כניסה'}
           </motion.button>
         </motion.form>
-
-        <motion.p
-          style={{ textAlign: 'center', marginTop: '1.5rem', fontSize: '0.75rem', color: 'var(--sand-warm)' }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7 }}
-        >
-          לעיניים שלך בלבד
-        </motion.p>
       </motion.div>
     </motion.div>
   )
